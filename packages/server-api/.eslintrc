@@ -1,0 +1,35 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": "./tsconfig.json",
+      "ecmaVersion": 2020
+    },
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "plugins": [
+      "prettier",
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "plugin:@typescript-eslint/all",
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    ],
+    "rules": {
+      "semi": "off",
+      "@typescript-eslint/semi": ["error"],
+      "@typescript-eslint/no-magic-numbers": "off",
+      "@typescript-eslint/no-extraneous-class": "off",
+      "@typescript-eslint/space-before-function-paren": "off",
+      "@typescript-eslint/restrict-template-expressions": "off",
+      "@typescript-eslint/prefer-readonly-parameter-types": ["off", {"checkParameterProperties": false}],
+      "@typescript-eslint/object-curly-spacing": "off",
+      "sort-imports": "error",
+      "no-magic-numbers": "off"
+      }
+  }
+  
