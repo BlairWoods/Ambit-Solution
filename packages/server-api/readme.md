@@ -1,6 +1,6 @@
 # Server-API - Outline
 
-Creates a new GraphQL server that returns people data for the UI component.
+Creates a new GraphQL server that returns people data for the UI component. The server will be hosted on the endpoint <https://localhost:5000> or the port that you have configured the endpoint to run under.
 
 ## Installation
 
@@ -20,6 +20,12 @@ Start the Server-API component without building it and running linting (i.e. usi
 
 ```cmd
 npm quickstart
+```
+
+Run the linter:
+
+```cmd
+npm lint
 ```
 
 ## Configuration

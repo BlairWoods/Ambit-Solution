@@ -6,7 +6,7 @@ import type { ReactElement } from "react";
  * Standard Loading component.
  */
 // eslint-disable-next-line @typescript-eslint/naming-convention
-export default function Loading(): ReactElement {
+const Loading = (): ReactElement => {
     const [loadingDots, setLoadingDots] = useState(1);
     useEffect(() => {
         const timer = setTimeout((): void => {
@@ -22,4 +22,6 @@ export default function Loading(): ReactElement {
             Loading {".".repeat(loadingDots)}
         </span>
     );
-}
+};
+
+export default Loading;

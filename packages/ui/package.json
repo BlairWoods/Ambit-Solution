@@ -9,8 +9,8 @@
   "scripts": {
     "lint": "npx eslint src/ --ext ts,tsx",
     "dev": "npx cross-env NODE_OPTIONS='--inspect' next dev -p 3001",
-    "build": "next build",
-    "start": "next start"
+    "build": "npm run lint && next build",
+    "start": "npm run build && next start"
   },
   "dependencies": {
     "@apollo/client": "^3.3.10",
